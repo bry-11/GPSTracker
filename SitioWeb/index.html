@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Android GPS Tracker</title>
+	<link rel="stylesheet" href="vistas/Bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="vistas/css/estilos.css">
+
+</head>
+
+<body>
+	<header align="center">
+		<div class="container-fluid">
+			<h3>Android GPS Tracker</h3>
+
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Mapa</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                <a class="navbar-brand" href="vistas/terAndroid.php" target="enlace">Agregar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div> 
+  </header>
+
+
+
+<div class="container-fluid" style="text-align: center;" id="centro">
+  <section class="row">
+    <div class="myIframe" >
+      <iframe width="1500px" height="650px" frameborder="0" name="enlace" src="vistas/tabla_info.php" onload="autofitIframe(this);"></iframe>
+    </div>
+  </section>
+</div> 
+
+
+
+<script src="vistas/Bootstrap/jquery-3.1.1.min.js"></script>
+<script src="vistas/Bootstrap/bootstrap.min.js"></script>
+		
+
+</body>
+
+
+<script language="JavaScript">
+//Ajusta el tamaño del iframe para evitar el scroll (errores)
+//Se Queria ajustar el height(altura) del index.html de acuerdo a la altura del iframe para evitar scroll
+function autofitIframe(id){
+
+  /*var ajuste = 0;
+  id.style.height = "600px";
+  if (!window.opera && document.all && document.getElementById){
+
+    var ajuste = (0.0147*parseInt(id.contentWindow.document.body.scrollHeight)-7.026)*60;
+    ajuste = parseInt(ajuste,10);
+    id.style.height= id.contentWindow.document.body.scrollHeight+ajuste;
+
+
+  } else if(document.getElementById) {
+    
+    var ajuste = (0.0147*parseInt(id.contentDocument.body.scrollHeight)-7.026)*60;
+    ajuste = parseInt(ajuste,10);
+    id.style.height=id.contentDocument.body.scrollHeight+ajuste+"px";
+  }
+*/
+
+}
+</script>
+</html>
